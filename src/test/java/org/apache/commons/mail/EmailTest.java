@@ -69,5 +69,11 @@ public class EmailTest {
     public void testGetMailSession() throws Exception {
         email.getMailSession();
     }
+
+    // getSentDate Tests
+    @Test
+    public void testGetSentDate() throws Exception {
+        email.getSentDate();
+    }
 	
 }
