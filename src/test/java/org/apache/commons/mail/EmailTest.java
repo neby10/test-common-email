@@ -56,12 +56,18 @@ public class EmailTest {
     public void testBuildMimeMessage() throws Exception {
         email.buildMimeMessage();
     }
-    
+
      // getHostName Tests
     @Test
     public void testGetHostName() throws Exception {
         email.getHostName();
         assertEquals(null, email.getHostName());
+    }
+
+    // getMailSession Tests
+    @Test
+    public void testGetMailSession() throws Exception {
+        email.getMailSession();
     }
 	
 }
