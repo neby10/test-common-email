@@ -21,5 +21,12 @@ public class EmailTest {
     public void tearDownEmailTest() throws Exception {
         
     }
+
+     // addBcc Tests
+    @Test
+    public void testAddBcc() throws Exception {
+        email.addBcc(TEST_EMAILS);
+        assertEquals(4, email.getBccAddresses().size());
+    }
 	
 }
