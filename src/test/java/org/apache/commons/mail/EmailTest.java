@@ -35,5 +35,13 @@ public class EmailTest {
         email.addCc(TEST_EMAILS);
         assertEquals(4, email.getCcAddresses().size());
     }
+
+    // addHeader Tests
+    @Test (expected = IllegalArgumentException.class)
+    public void testAddHeader() throws Exception {
+        email.addHeader(parameterName, "abc.com");
+        //assertThrows(IllegalArgumentException.class, () -> email.addHeader(parameterName, "abc.com"), "empty parameter should throw");
+    
+    }
 	
 }
