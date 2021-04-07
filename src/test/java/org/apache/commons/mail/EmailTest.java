@@ -75,5 +75,13 @@ public class EmailTest {
     public void testGetSentDate() throws Exception {
         email.getSentDate();
     }
+
+    // getSocketConnectionTimeout Tests
+    @Test
+    public void testGetSocketConnectionTimeout() throws Exception {
+        email.setSocketConnectionTimeout(timeout);
+        email.getSocketConnectionTimeout();
+        assertEquals(100, email.getSocketConnectionTimeout());
+    }
 	
 }
