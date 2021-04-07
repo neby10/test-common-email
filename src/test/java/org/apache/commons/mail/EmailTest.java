@@ -50,5 +50,11 @@ public class EmailTest {
         email.addReplyTo(parameterName);
         assertEquals(null, email.addReplyTo(parameterName));
     }
+
+    //buildMimeMessage Tests
+    @Test
+    public void testBuildMimeMessage() throws Exception {
+        email.buildMimeMessage();
+    }
 	
 }
