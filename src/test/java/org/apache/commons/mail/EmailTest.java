@@ -83,5 +83,12 @@ public class EmailTest {
         email.getSocketConnectionTimeout();
         assertEquals(100, email.getSocketConnectionTimeout());
     }
+
+    // setFrom Tests
+    @Test (expected = EmailException.class)
+    public void testSetFrom() throws Exception {
+        email.setFrom("myemailcom");
+        //assertThrows(EmailException.class, () -> email.setFrom("myemailcom"), "invalid email should throw");
+    }
 	
 }
