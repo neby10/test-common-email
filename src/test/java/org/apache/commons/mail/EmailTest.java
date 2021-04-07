@@ -43,5 +43,12 @@ public class EmailTest {
         //assertThrows(IllegalArgumentException.class, () -> email.addHeader(parameterName, "abc.com"), "empty parameter should throw");
     
     }
+
+    // addReplyTo Tests
+    @Test
+    public void testAddReplyTo() throws Exception {
+        email.addReplyTo(parameterName);
+        assertEquals(null, email.addReplyTo(parameterName));
+    }
 	
 }
